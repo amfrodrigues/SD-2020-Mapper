@@ -7,5 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="com.google.guava:guava:18.0" level="application" />
+    <orderEntry type="library" name="com.google.guava:guava:27.0.1-jre1" level="application" />
   </component>
 </module>
