@@ -7,14 +7,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04d7a32b-27f8-4c90-8f9c-0e31e79ed7ab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/MapperService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MapperServiceInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ReducerServiceInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ResourceInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StorageServiceInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mapper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mapper/com/mapper/MapperMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mapper/com/mapper/MapperService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mapper/com/mapper/MapperServiceInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mapper/MapperMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MapperMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mapper/MapperService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mapper/MapperServiceInterface.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1lhwbMOV4hLjPB6UUFAtJbeju2g" />
@@ -24,12 +48,16 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -48,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608065022931</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="sprint 1 review">
+      <created>1608068029365</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608068029365</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -61,9 +96,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="teste" />
-    <option name="LAST_COMMIT_MESSAGE" value="teste" />
+    <MESSAGE value="sprint 1 review" />
+    <option name="LAST_COMMIT_MESSAGE" value="sprint 1 review" />
   </component>
 </project>
