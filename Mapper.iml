@@ -7,7 +7,16 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="com.google.guava:guava:18.0" level="application" />
     <orderEntry type="library" name="com.google.guava:guava:27.0.1-jre1" level="application" />
+    <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-core:2.11.1" level="application" />
+    <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-databind:2.11.1" level="application" />
+    <orderEntry type="library" name="com.google.guava:guava:27.0.1-jre" level="application" />
+    <orderEntry type="library" name="com.googlecode.json-simple:json-simple:1.1" level="application" />
+    <orderEntry type="library" name="edu.umass.cs.benchlab:harlib:1.1.2" level="application" />
+    <orderEntry type="library" name="net.lightbody.bmp:browsermob-core:2.1.5" level="application" />
+    <orderEntry type="library" name="org.apache.commons:commons-lang3:3.11" level="application" />
+    <orderEntry type="library" name="org.json:json:20190722" level="application" />
+    <orderEntry type="library" name="org.junit.jupiter:junit-jupiter:5.7.0" level="application" />
+    <orderEntry type="library" name="org.seleniumhq.selenium:selenium-java:3.141.59" level="application" />
   </component>
 </module>

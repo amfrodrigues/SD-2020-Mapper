@@ -17,7 +17,7 @@ public class MapperMain {
             mapperService = new MapperService();
             r.rebind("mapperservice", mapperService);
 
-            System.out.println("Mapper ready");
+            System.out.println("Mapper ready port:" +port);
         }catch(Exception e) {
             System.out.println("Mapper main " + e.getMessage());
         }

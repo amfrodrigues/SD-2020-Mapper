@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="Mapper">
+  <artifact type="jar" build-on-make="true" name="Mapper">
     <output-path>$PROJECT_DIR$/out/artifacts/Mapper</output-path>
     <root id="archive" name="Mapper.jar">
       <element id="module-output" name="Mapper" />
