@@ -10,16 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04d7a32b-27f8-4c90-8f9c-0e31e79ed7ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ProcessCombinationModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MasterServiceInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19-Jan-21_20_21_[Default_Changelist]/Mapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19-Jan-21_20_21_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19-Jan-21_20_21__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mapper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Mapper.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Mapper/Mapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Mapper/Mapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mapper/MapperMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mapper/MapperMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mapper/MapperService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mapper/MapperService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mapper/MapperServiceInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mapper/MapperServiceInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mapper/ReducerServiceInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mapper/ReducerServiceInterface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MapperMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MapperMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MapperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MapperService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MapperServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MapperServiceInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReducerServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReducerServiceInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ResourceInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResourceInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StorageServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StorageServiceInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +47,14 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -106,7 +118,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610200121431</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="v4.0&#10;added send serialized data to be processed with reducer &#10;added data sent equally distributed to all reducers">
+      <created>1611087714045</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611087714045</updated>
+    </task>
+    <task id="LOCAL-00005" summary="v4.0&#10;added send serialized data to be processed with reducer &#10;added data sent equally distributed to all reducers">
+      <created>1611087775465</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611087775465</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,6 +151,7 @@
     <MESSAGE value="teste" />
     <MESSAGE value="sprint 1 review" />
     <MESSAGE value="sprint 3 &#10;added function to get data from storage&#10;added function to process n combinations of data from storage &#10;added function to process the n subcombinations using diferent reduceres" />
-    <option name="LAST_COMMIT_MESSAGE" value="sprint 3 &#10;added function to get data from storage&#10;added function to process n combinations of data from storage &#10;added function to process the n subcombinations using diferent reduceres" />
+    <MESSAGE value="v4.0&#10;added send serialized data to be processed with reducer &#10;added data sent equally distributed to all reducers" />
+    <option name="LAST_COMMIT_MESSAGE" value="v4.0&#10;added send serialized data to be processed with reducer &#10;added data sent equally distributed to all reducers" />
   </component>
 </project>

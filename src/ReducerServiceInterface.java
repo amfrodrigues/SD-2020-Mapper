@@ -4,5 +4,5 @@ import java.rmi.RemoteException;
 import java.util.ArrayList;
 
 public interface ReducerServiceInterface  extends Remote {
-    void process_combinations(ArrayList<ArrayList<String>> combinations, int fileCount) throws RemoteException;
+    boolean process_combinations(ArrayList<ArrayList<String>> combinations) throws RemoteException;
 }
