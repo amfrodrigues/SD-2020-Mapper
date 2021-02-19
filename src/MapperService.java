@@ -6,21 +6,18 @@ import java.util.*;
 
 import com.google.common.collect.*;
 
-import javax.annotation.concurrent.Immutable;
 
 public class MapperService extends UnicastRemoteObject implements MapperServiceInterface, Serializable {
     private final String mapperID ;
     private final String storage_rmi_address = "rmi://localhost:2022/storageservice";
 
-    private HashMap<String,ArrayList<ArrayList<String>>> hashPartitionPerReducer;
+    private Map<String,ArrayList<ArrayList<String>>> hashPartitionPerReducer = Collections.synchronizedMap(new HashMap<>());
 
-    private ArrayList<String> usedReducer = new ArrayList<>();
-
-
+    private List<String> usedReducer = Collections.synchronizedList(new ArrayList<>());
 
 
     public MapperService(String mapperID) throws RemoteException {
-        this.hashPartitionPerReducer = new HashMap<>();
+
         this.mapperID = mapperID;
     }
 
@@ -72,39 +69,37 @@ public class MapperService extends UnicastRemoteObject implements MapperServiceI
                     try{
                        hashPartitionPerReducer.put(reducer_rmi_address,partition_serialized); // saves the id of the reducer and partition used
                        usedReducer.add(reducer_rmi_address);
-                       if(reducer_rmi.process_combinations(partition_serialized)) usedReducer.remove(reducer_rmi_address);
+                      if(reducer_rmi.process_combinations(partition_serialized)){
+
+                          usedReducer.remove(reducer_rmi_address);
+                          System.out.println("Mapper "+reducer_rmi_address +"finish still waiting for "+usedReducer.size());
+                      }
                     }catch(Exception e){
                         e.printStackTrace();
                     }
                 });
-                threadList.put(thread_name,t);
+               // threadList.put(thread_name,t);
+                t.start();
+
             }catch(Exception e){e.printStackTrace(); return false;}
             i++;
         }
-        /*
-            launch threads
-         */
-        for(Thread values : threadList.values()){
-            values.start();
-        }
+
         /*
             Blocks this thread until all others launched threads finishes
-         */
+ */
         for(Thread values : threadList.values()){
             try{
                 values.join();
             }catch(Exception e){e.printStackTrace();}
         }
-        /*
+/*
             failsafe thread for unfinished task requests
          */
-        Thread failsafe = new Thread(()->{
+
             while(usedReducer.size() > 0) {}
-        });
-        failsafe.start();
-        try{
-            failsafe.join();
-        }catch(Exception e){e.printStackTrace();}
+
+        System.out.println("Mapper Finished Task");
         return true;
     }
 

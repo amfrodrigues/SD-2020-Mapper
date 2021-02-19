@@ -10,20 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04d7a32b-27f8-4c90-8f9c-0e31e79ed7ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MasterServiceInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19-Jan-21_20_21_[Default_Changelist]/Mapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19-Jan-21_20_21_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CombinationProcessingData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19-Jan-21_20_21__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Mapper/Mapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Mapper/Mapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mapper/MapperMain$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mapper/MapperMain$2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mapper/MapperMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mapper/MapperMain.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mapper/MapperService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mapper/MapperService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mapper/MapperServiceInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mapper/MapperServiceInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mapper/ReducerServiceInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mapper/ReducerServiceInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mapper/MasterServiceInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mapper/MasterServiceInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mapper/StorageServiceInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mapper/StorageServiceInterface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MapperMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MapperMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MapperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MapperService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MapperServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MapperServiceInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MasterServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MasterServiceInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProcessCombinationModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProcessCombinationModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReducerServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReducerServiceInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StorageServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StorageServiceInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +79,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="SELECTIVE" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -87,6 +91,21 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MapperMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MapperMain" />
+      <module name="Mapper" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;8022&quot;" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MapperMain" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -132,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611087775465</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="v4.0&#10;added send serialized data to be processed with reducer&#10;added data sent equally distributed to all reducers">
+      <created>1613748950642</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1613748950642</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +178,8 @@
     <MESSAGE value="sprint 1 review" />
     <MESSAGE value="sprint 3 &#10;added function to get data from storage&#10;added function to process n combinations of data from storage &#10;added function to process the n subcombinations using diferent reduceres" />
     <MESSAGE value="v4.0&#10;added send serialized data to be processed with reducer &#10;added data sent equally distributed to all reducers" />
-    <option name="LAST_COMMIT_MESSAGE" value="v4.0&#10;added send serialized data to be processed with reducer &#10;added data sent equally distributed to all reducers" />
+    <MESSAGE value="functional and non functional taks" />
+    <MESSAGE value="v4.0&#10;added send serialized data to be processed with reducer&#10;added data sent equally distributed to all reducers" />
+    <option name="LAST_COMMIT_MESSAGE" value="v4.0&#10;added send serialized data to be processed with reducer&#10;added data sent equally distributed to all reducers" />
   </component>
 </project>

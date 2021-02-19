@@ -5,11 +5,11 @@ import java.rmi.registry.Registry;
 
 public class MapperMain {
     public static void main(String[] args){
-       new Thread(){
-           public void run(){
+       Thread threadMain = new Thread(()->{
+
                Registry r = null;
                MapperServiceInterface mapperService;
-               Integer port = Integer.parseInt(args[0]);
+               int port = Integer.parseInt(args[0]);
                try{
                    r = LocateRegistry.createRegistry(port);
                }catch(RemoteException a){
@@ -24,23 +24,23 @@ public class MapperMain {
                }catch(Exception e) {
                    System.out.println("Mapper main " + e.getMessage());
                }
-           }
-       }.start();
+
+       });
+       threadMain.start();
 
 
-        new Thread(){
-            public void run(){
-                while (true){
-                    MasterServiceInterface masterService = null;
-                    try{
-                        Thread.sleep(1000);
-                        System.out.println("Mapper["+args[0]+"] is heartbeat alive");
-                        masterService = (MasterServiceInterface) Naming.lookup("rmi://localhost:2023/masterservice");
-                        masterService.heartbeat_check("rmi://localhost:"+args[0]+"/mapperservice","mapper");
-                        Thread.sleep(14*1000);
-                    }catch(Exception e){e.printStackTrace();}
-                }
+        Thread threadHeathbeat = new Thread(() -> {
+            while (true){
+                MasterServiceInterface masterService;
+                try{
+                    Thread.sleep(1000);
+                    System.out.println("Mapper["+args[0]+"] is heartbeat alive");
+                    masterService = (MasterServiceInterface) Naming.lookup("rmi://localhost:2023/masterservice");
+                    masterService.heartbeat_check("rmi://localhost:"+args[0]+"/mapperservice","mapper");
+                    Thread.sleep(14*1000);
+                }catch(Exception e){e.printStackTrace();}
             }
-        }.start();
+        });
+        threadHeathbeat.start();
     }
 }
