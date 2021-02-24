@@ -28,7 +28,7 @@ public class MapperMain {
        });
        threadMain.start();
 
-
+       // method para enviar hearthbeat
         Thread threadHeathbeat = new Thread(() -> {
             while (true){
                 MasterServiceInterface masterService;
